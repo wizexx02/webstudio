@@ -38,7 +38,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero__btn" data-open-modal>Замовити послугу</button>
+            <button class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
         </section> 
         <section class="features">
@@ -325,13 +325,13 @@
      </footer>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-          <button class="btn" data-close-modal>Закрити</button>
+          <button class="btn" data-modal-close>Закрити</button>
           <p class="modal__header">Залиште свої дані, ми вам передзвонимо</p>
           <form class="modal__form" action="">
             <label class="modal__label" for=""><span class="modal__label-text">Ім'я</span>
             <span class="modal__span">
                 <input class="modal__input" type="text">
-                <svg class="modal__human" width="12" height="12">
+                <svg class="modal__human modal__svg" width="12" height="12">
                     <use class="modal__svg-use" href="./symbol-defs.svg#icon-human"></use>
                 </svg>
             </span>
@@ -339,7 +339,7 @@
             <label class="modal__label" for=""><span class="modal__label-text">Телефон</span>
             <span class="modal__span">
                 <input class="modal__input" type="tel">
-                <svg class="modal__tel" width="13" height="13">
+                <svg class="modal__tel modal__svg" width="13" height="13">
                     <use class="modal__svg-use" href="./symbol-defs.svg#icon-telephone"></use>
                 </svg>
             </span>
@@ -347,16 +347,17 @@
             <label class="modal__label" for=""><span class="modal__label-text">Пошта</span>
             <span class="modal__span">
                 <input class="modal__input" type="email">
-                <svg class="modal__mail" width="15" height="12">
-                    <use class="modal__svg-use" href="./symbol-defs.svgicon-mail"></use>
+                <svg class="modal__mail modal__svg" width="15" height="12">
+                    <use class="modal__svg-use" href="./symbol-defs.svg#icon-mail"></use>
                 </svg>
             </span>
             
             <label class="modal__label" for=""><span class="modal__label-text">Коментар</span>
-            <textarea class="modal__textarea" name="" id="" cols="30" rows="10"></textarea>
+            <textarea class="modal__textarea" name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
             </label>
+            <div class="modal__check-wrap">
             <input class="modal__check" type="checkbox" name="" id="">
-            <p class="modal__check-p">Погоджуюся з розсилкою та приймаю <a class="modal__check-a" href="">Умови договору</a></p>
+            <p class="modal__check-p">Погоджуюся з розсилкою та приймаю <a class="modal__check-a" href="">Умови договору</a></p></div>
             <button class="modal__button">Відправити</button>
           </form>
         </div>
