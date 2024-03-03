@@ -357,7 +357,6 @@ body{
 }
 .footer__list-wrapper{
     display: flex;
-    justify-content: center;
     gap: 10px;
 }
 .footer__list-link{
@@ -467,6 +466,7 @@ body{
   .modal__input{
     width: 100%;
     height: 40px;
+    padding-left: 42px;
   }
   .modal__span{
     position: relative;
@@ -478,4 +478,76 @@ body{
   }
   .modal__label-text{
     margin-top: 10px;
+  }
+  .btn{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+  }
+  .modal__input:focus, .modal__textarea:focus{
+    outline-color: #2196F3;
+  }
+  .modal__close:hover{
+    fill: #2196F3;
+    transition: 0.3s;
+  }
+  .modal__close{
+    transition: 0.3s;
+  }
+  .modal__input:focus+.modal__svg{
+    fill: #2196F3;
+  }
+  .portfolio__list-item{
+    outline: 1px solid rgba(238, 238, 238, 1);
+  }
+  .portfolio__list-text{
+    padding-top: 4px;
+  }
+  .footer__tg-title{
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3%;
+    text-transform: uppercase;
+  }
+  .footer__tg-button{
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 6%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  .footer__tg-input{
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+  }
+  .footer__tg-form{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .footer__tg-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__container{
+    display: flex;
   }

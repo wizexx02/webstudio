@@ -19,7 +19,7 @@
         <nav class="nav">
             <ul class="nav__list">     
                 <li class="nav__list-item"><a class="nav__list-link" href="">Студія</a></li>
-                <li class="nav__list-item"><a class="nav__list-link" href="">Портфоліо</a></li>
+                <li class="nav__list-item"><a class="nav__list-link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="nav__list-item"><a class="nav__list-link" href="">Контакти</a></li>
             </ul>
         </nav>
@@ -321,11 +321,26 @@
             </li>
         </ul>
     </div>
+    <div class="footer__tg-wrap">
+        <p class="footer__tg-title">Підпишіться на розсилку</p>
+        <form class="footer__tg-form" action="">
+        <input class="footer__tg-input" type="email" placeholder="E-mail">
+        <button class="footer__tg-button">Підписатися
+            <svg class="footer__tg-ico" width="24" height="24">
+                <use href="./symbol-defs.svg#icon-telegram"></use>
+            </svg>
+        </button>
+        </form>
+    </div>
         </div>
      </footer>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-          <button class="btn" data-modal-close>Закрити</button>
+          <button class="btn" data-modal-close>
+            <svg class="modal__close" width="11" height="11">
+                <use href="/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </button>
           <p class="modal__header">Залиште свої дані, ми вам передзвонимо</p>
           <form class="modal__form" action="">
             <label class="modal__label" for=""><span class="modal__label-text">Ім'я</span>
@@ -362,6 +377,7 @@
           </form>
         </div>
       </div>
+      
       <script src="./js/script.js"></script>
 </body>
 </html>
