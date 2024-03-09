@@ -593,3 +593,25 @@ body{
   .work__list-item{
     position: relative;
   }
+  .portfolio__list-comment{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    transition: 0.5s;
+  }
+  .portfolio__list-wrapper{
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio__list-link:hover .portfolio__list-comment{
+    transform: translateY(0);
+  }
