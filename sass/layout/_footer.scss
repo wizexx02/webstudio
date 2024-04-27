@@ -1,0 +1,102 @@
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $color-hover;
+    font-size: 26px;
+
+&__footer{
+    color: $first-color;
+}}
+.footer{
+    background-color: $color-sections;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__text{
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__container{
+        display: flex;
+        gap: 70px;
+    }
+    &__list-wrapper{
+        display: flex;
+        gap: 10px;
+    }
+    &__list-link{
+        // color: rgba(255, 255, 255, 1);
+        // transition: 0.5s;
+        // border-radius: 50%;
+        // width: 44px;
+        // height: 44px;
+        // background-color: rgba(255, 255, 255, 0.1);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include link(44px, 44px, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1), flex, center, center, 0.5s, 50%);
+        &:hover{
+            color: rgba(255, 255, 255, 1);
+            background-color: #2196F3;
+        }
+    }
+    &__list-svg{
+        fill: currentColor; 
+    }
+    
+    &__tg-title{
+        font-weight: 700;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1);
+        letter-spacing: 3%;
+        text-transform: uppercase;
+      }
+      &__tg-button{
+        letter-spacing: 6%;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        @include btn(200px, 50px, #2196F3, 4px, white, 700, 16px, flex, 0)
+      }
+      &__tg-input{
+        width: 358px;
+        height: 50px;
+        background-color: inherit;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        padding-left: 16px;
+        color: white;
+      }
+      &__tg-form{
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      &__tg-wrap{
+        display: flex;
+        flex-direction: column;
+      }
+      &__container{
+        display: flex;
+      }
+}
+  .address__list-link{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.location{
+    font-weight: 400;
+    font-size: 14px;
+    color: $first-color;
+}
+.address{
+    margin-top: 20px;
+}
+.address__list-item{
+    margin-bottom: 9px;
+}

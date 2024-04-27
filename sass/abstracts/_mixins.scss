@@ -1,0 +1,22 @@
+@mixin btn($wd,$hg,$bac,$bor,$col,$fw,$fs,$disp,$marTop){
+    width: $wd;
+    height: $hg;
+    background-color: $bac;
+    border-radius: $bor;
+    color: $col;
+    font-weight: $fw;
+    font-size: $fs;
+    display: $disp;
+    margin-top: $marTop;
+}
+@mixin link($wd,$hg,$col,$bgc,$disp,$just,$align,$trans,$bor){
+    width: $wd;
+    height: $hg;
+    color: $col;
+    background-color: $bgc;
+    display: $disp;
+    justify-content: $just;
+    align-items: $align;
+    transition: $trans;
+    border-radius: $bor;
+}

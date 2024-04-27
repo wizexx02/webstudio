@@ -1,0 +1,36 @@
+.clients{
+    padding: 94px 0;
+
+&__title{
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 3%;
+    font-weight: 700;
+}
+&__list{
+    display: flex;
+    gap:30px;
+    margin-top: 66px;
+
+&-item{
+    flex-basis: calc((100% - 150px) / 6);
+}
+&-svg{
+    fill: currentColor;
+}
+&-link{
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #757575;
+    transition: 0.5s;
+    &:hover{
+        color: #2196F3;
+    transition: 0.5s;
+    border-color: #2196F3;
+    }
+}
+}}

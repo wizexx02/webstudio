@@ -1,0 +1,50 @@
+.features{
+    padding: 94px 0;
+
+&__list{
+    display: flex;
+    gap: 30px;
+    &-item:nth-child(1)::before{
+        background-image: url(../images/features/Rectangle\ 3.png);
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    &-item:nth-child(2)::before{
+        background-image: url(../images/features/Rectangle\ 2.png);
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    &-item:nth-child(3)::before{
+        background-image: url(../images/features/Rectangle\ 3\ \(1\).png);
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    &-item:nth-child(4)::before{
+        background-image: url(../images/features/Rectangle\ 4.png);
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+&-subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    color: $second-color-text;
+    margin-bottom: 10px;
+}
+&-text{
+    color: $third-color-light-gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}}}
