@@ -20,3 +20,18 @@
     transition: $trans;
     border-radius: $bor;
 }
+@mixin mob($breakpoint){
+	@media screen and (min-width:$breakpoint){
+     @content;
+	}
+}
+@mixin tab($breakpoint){
+	@media screen and (min-width:$breakpoint){
+     @content;
+	}
+}
+@mixin desc($breakpoint){
+	@media screen and (min-width:$breakpoint){
+		@content;
+	}
+}

@@ -1,17 +1,22 @@
 .hero{
-    background:url(../images/features/Img.png);
+    background-image:url(../images/features/Img.png);
+    background-color: rgba(47, 48, 58, 1);
     padding-top: 200px;
     padding-bottom: 200px;
-
+    
 &__title{
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+    text-transform: uppercase;
     color: $first-color;
-    line-height: 60px;
+    line-height: 40px;
     letter-spacing: 0.06em;
     max-width: 696px;
     text-align: center;
     margin: 0 auto;
+    @include tab(768px){
+        max-width: 360px;
+    }
 }
 &__btn{
     margin: 0 auto;

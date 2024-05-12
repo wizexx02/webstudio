@@ -11,6 +11,13 @@
     background-color: $color-sections;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+    @include desc(1199px){
+      text-align: left;
+    }
+    &__adress{
+      text-align: center;
+    }
     &__text{
         color: rgba(255, 255, 255, 1);
         font-size: 14px;
@@ -22,10 +29,25 @@
     &__container{
         display: flex;
         gap: 70px;
+        flex-direction: column;
+        @include tab(768px){
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: baseline;
+          gap: 60px 165px;
+        }
+        @include desc(1199px){
+          flex-direction: row;
+        }
     }
     &__list-wrapper{
         display: flex;
         gap: 10px;
+        justify-content: center;
+        @include desc(1199px){
+          justify-content: flex-start;
+        }
     }
     &__list-link{
         // color: rgba(255, 255, 255, 1);
@@ -59,6 +81,7 @@
         align-items: center;
         gap: 10px;
         justify-content: center;
+        margin: 0 auto;
         @include btn(200px, 50px, #2196F3, 4px, white, 700, 16px, flex, 0)
       }
       &__tg-input{
@@ -75,6 +98,12 @@
         display: flex;
         gap: 12px;
         margin-top: 20px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 20px;
+        @include desc(1199px){
+          flex-direction: row;
+        }
       }
       &__tg-wrap{
         display: flex;

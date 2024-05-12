@@ -3,17 +3,23 @@
 
 &__title{
     text-align: center;
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: 28px;
     letter-spacing: 3%;
     font-weight: 700;
+    padding-bottom: 30px;
 }
 &__list{
     display: flex;
-    gap:30px;
-    margin-top: 66px;
-
+    flex-wrap: wrap;
+    gap: 30px;
+    @include desc(1199px){
+        gap:30px;
+        margin-top: 66px;
+        }
 &-item{
-    flex-basis: calc((100% - 150px) / 6);
+    // flex-basis: calc((100% - 150px) / 6);
+    width: 210px;
 }
 &-svg{
     fill: currentColor;

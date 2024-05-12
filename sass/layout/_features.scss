@@ -2,11 +2,27 @@
     padding: 94px 0;
 
 &__list{
-    display: flex;
-    gap: 30px;
+    @include tab(768px){
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    @include desc(1199px){
+        display: flex;
+        gap: 30px;
+        }
+        &-item{
+            @include tab(768px){
+                max-width: 354px;
+            }
+        }
     &-item:nth-child(1)::before{
         background-image: url(../images/features/Rectangle\ 3.png);
-        width: 270px;
+        // width: 270px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 120px;
         content: "";
         display: inline-block;
@@ -14,7 +30,11 @@
     }
     &-item:nth-child(2)::before{
         background-image: url(../images/features/Rectangle\ 2.png);
-        width: 270px;
+        // width: 270px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 120px;
         content: "";
         display: inline-block;
@@ -22,7 +42,11 @@
     }
     &-item:nth-child(3)::before{
         background-image: url(../images/features/Rectangle\ 3\ \(1\).png);
-        width: 270px;
+        // width: 270px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 120px;
         content: "";
         display: inline-block;
@@ -30,7 +54,11 @@
     }
     &-item:nth-child(4)::before{
         background-image: url(../images/features/Rectangle\ 4.png);
-        width: 270px;
+        // width: 270px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 120px;
         content: "";
         display: inline-block;
@@ -41,6 +69,11 @@
     font-size: 14px;
     color: $second-color-text;
     margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: .03em;
+    @include tab(768px){
+        text-align: left;
+    }
 }
 &-text{
     color: $third-color-light-gray;

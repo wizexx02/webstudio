@@ -1,16 +1,36 @@
 .header{
     border-bottom: 1px solid rgba(236, 236, 236, 1);
+    padding: 16px 0;
+    @include desc(1199px){
+        padding: 0;	
+        }
+    &__button{
+        @include tab(768px){
+            display: none;
+        }
+    }
 &__content-wrap{
     display: flex;
-    gap: 93px;
+    justify-content: space-between;
+    // gap: 93px;
     align-items: center;
 }}
 .nav__list{
-    display: flex;
-    gap: 50px;
-
+    display: none;
+    @include tab(768px){
+        display: flex;
+        gap:40px;
+    }
+    @include desc(1199px){
+	display: flex;
+    gap: 50px;	
+	}
+    
 &-item{
     padding: 32px 0;
+    @include tab(768px){
+        padding:12px;
+    }
 }
 &-link{
     font-size: 14px;
@@ -24,9 +44,17 @@
     }
 }}
 .contact__list{
-    margin-left: auto;
+    display: none;
+    @include tab(768px){
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @include desc(1199px){
+        margin-left: auto;
     display: flex;
     gap: 50px;
+        }
     &-link{
         display: flex;
         gap: 10px;
@@ -51,7 +79,6 @@
     font-weight: 700;
     color: $color-hover;
     font-size: 26px;
-
 &__header{
     color: $second-color-text;
 }}
@@ -67,5 +94,8 @@
         position: absolute;
         left: 0;
         top: 45px;
+        @include tab(768px){
+            top: 42px;
+        }
       }
   }

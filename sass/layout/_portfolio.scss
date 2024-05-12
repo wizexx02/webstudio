@@ -6,8 +6,18 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include tab(768px){
+      justify-content: flex-start;
+    }
+    
     &-item{
         outline: 1px solid rgba(238, 238, 238, 1);
+        width: 450px;
+        @include tab(768px){
+          width: 354px;
+        }
       }
       &-text{
         padding-top: 4px;
@@ -53,6 +63,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
+    flex-wrap: wrap;
  
  &-button{
      background-color: #F5F4FA;
