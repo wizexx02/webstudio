@@ -338,6 +338,11 @@ button {
     max-width: 354px;
   }
 }
+@media screen and (min-width: 1199px) {
+  .features__list-item {
+    max-width: 270px;
+  }
+}
 .features__list-item:nth-child(1)::before {
   background-image: url(../images/features/Rectangle\ 3.png);
   width: 100%;
@@ -1027,10 +1032,16 @@ button {
 }
 @media screen and (min-width: 1199px) {
   .work {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
+}
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .work__list-text {
   font-weight: 700;
@@ -1056,6 +1067,7 @@ button {
 }
 .work__list-item {
   position: relative;
+  max-width: 370px;
 }
 .work__title {
   font-weight: 700;

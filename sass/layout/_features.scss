@@ -13,7 +13,9 @@
         }
         &-item{
             @include tab(768px){
-                max-width: 354px;
+                max-width: 354px;}
+        @include desc(1199px){
+                max-width: 270px;
             }
         }
     &-item:nth-child(1)::before{

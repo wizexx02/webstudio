@@ -2,9 +2,11 @@
     padding-bottom: 94px;
     display: none;
     @include desc(1199px){
-      display: flex;
+      display: block;
       }
 &__list{
+  display: flex;
+  justify-content: space-between;
     &-text{
         font-weight: 700;
         font-size: 14px;
@@ -23,6 +25,7 @@
       }
       &-item{
         position: relative;
+        max-width: 370px;
       }
 }
 &__title{
