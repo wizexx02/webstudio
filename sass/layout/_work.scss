@@ -1,11 +1,10 @@
 .work{
     padding-bottom: 94px;
     display: none;
+    @include desc(1199px){
+      display: flex;
+      }
 &__list{
-  @include desc(1199px){
-    display: flex;
-    gap: 30px;
-    }
     &-text{
         font-weight: 700;
         font-size: 14px;

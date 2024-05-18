@@ -48,9 +48,9 @@
         overflow: hidden;
       }
       &-comment{
-        transform: translateY(0);
+        transform: translateY(-100%);
       }
-      &-link:hover{
+      &-link:hover .portfolio__list-comment{
         transform: translateY(0);
       }
 }

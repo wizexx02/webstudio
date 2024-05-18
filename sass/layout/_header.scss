@@ -2,7 +2,7 @@
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     padding: 16px 0;
     @include desc(1199px){
-        padding: 0;	
+        padding: 0 80px;	
         }
     &__button{
         @include tab(768px){
@@ -14,6 +14,9 @@
     justify-content: space-between;
     // gap: 93px;
     align-items: center;
+    @include desc(1199px){
+        gap: 93px;	
+        }
 }}
 .nav__list{
     display: none;
@@ -54,6 +57,9 @@
         margin-left: auto;
     display: flex;
     gap: 50px;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
         }
     &-link{
         display: flex;
@@ -96,6 +102,9 @@
         top: 45px;
         @include tab(768px){
             top: 42px;
+        }
+        @include desc(1199px){
+            top: 37.5px;
         }
       }
   }

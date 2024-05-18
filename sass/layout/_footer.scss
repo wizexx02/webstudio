@@ -39,6 +39,8 @@
         }
         @include desc(1199px){
           flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 70px;
         }
     }
     &__list-wrapper{

@@ -20,6 +20,9 @@
 &-item{
     // flex-basis: calc((100% - 150px) / 6);
     width: 210px;
+    @include desc(1199px){
+        width: 170px;	
+        }
 }
 &-svg{
     fill: currentColor;
