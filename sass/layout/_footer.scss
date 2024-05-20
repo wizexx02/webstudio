@@ -25,12 +25,14 @@
         letter-spacing: 3%;
         text-transform: uppercase;
         margin-bottom: 20px;
+        margin-top: 60px;
     }
     &__container{
-        display: flex;
-        gap: 70px;
-        flex-direction: column;
+        // display: flex;
+        // gap: 70px;
+        // flex-direction: column;
         @include tab(768px){
+          display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: center;
@@ -38,10 +40,10 @@
           gap: 60px 165px;
         }
         @include desc(1199px){
-          flex-direction: row;
           flex-wrap: nowrap;
-          // justify-content: space-around;
-          gap: 70px;
+          gap: 0;
+          justify-content: space-between;
+          
         }
     }
     &__list-wrapper{
@@ -78,6 +80,7 @@
         color: rgba(255, 255, 255, 1);
         letter-spacing: 3%;
         text-transform: uppercase;
+        margin-top: 60px;
       }
       &__tg-button{
         letter-spacing: 6%;
@@ -113,7 +116,7 @@
         flex-direction: column;
       }
       &__container{
-        display: flex;
+        // display: flex;
       }
 }
   .address__list-link{

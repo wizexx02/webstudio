@@ -75,15 +75,19 @@ button {
 }
 
 .modal {
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 400px;
-  min-height: 300px;
   padding: 15px;
   background-color: skyblue;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__header {
@@ -118,7 +122,6 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
   padding: 40px;
   background-color: rgb(255, 255, 255);
   -webkit-transform: translate(-50%, -50%);
@@ -438,19 +441,13 @@ button {
   letter-spacing: 3%;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 70px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -468,13 +465,12 @@ button {
 }
 @media screen and (min-width: 1199px) {
   .footer__container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    gap: 70px;
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .footer__list-wrapper {
@@ -524,6 +520,7 @@ button {
   color: rgb(255, 255, 255);
   letter-spacing: 3%;
   text-transform: uppercase;
+  margin-top: 60px;
 }
 .footer__tg-button {
   letter-spacing: 6%;
@@ -587,12 +584,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .address__list-link {
   font-weight: 400;
   font-size: 14px;
@@ -891,20 +882,26 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 8px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 1199px) {
+  .filters__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .filters__list-button {
   background-color: #F5F4FA;
   border-radius: 4px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 6px 22px;
+  padding: 6px 25px;
+  letter-spacing: 0.03em;
   color: #212121;
+  font-weight: 500;
 }
 .filters__list-button:hover {
   background-color: #2196F3;

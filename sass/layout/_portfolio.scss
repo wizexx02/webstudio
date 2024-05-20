@@ -61,16 +61,20 @@
   .filters__list{
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
- 
+    @include desc(1199px){
+      justify-content: center;
+    }
  &-button{
      background-color: #F5F4FA;
      border-radius: 4px;
      transition: 0.5s;
-     padding: 6px 22px;
+     padding: 6px 25px;
+     letter-spacing: .03em;
      color: $second-color-text;
+     font-weight: 500;
      &:hover{
         background-color: $color-hover;
         transition: 0.5s;
