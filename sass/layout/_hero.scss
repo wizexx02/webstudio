@@ -1,9 +1,42 @@
 .hero{
-    background-image:url(../images/features/Img.png);
+    padding: 118px 0;
     background-color: rgba(47, 48, 58, 1);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    @include bg-image("../images/background/headerbackphoneon.webp", "../images/background/jpg/headerbackphoneon.jpg", $gradient);
+
+    @include retina(2,192dpi,2dppx) {
+        @include bg-image("../images/background/headerbackphonetwo.webp", "../images/background/jpg/headerbackphonetwo.jpg", $gradient);
+    }
     
+    @include retina(3,288dpi,3dppx) {
+        @include bg-image("../images/background/headerbackphonethre.webp", "../images/background/jpg/headerbackphonethre.jpg", $gradient);
+    }
+    @include tab(768px){
+        padding: 118px 0;
+        @include bg-image("../images/background/headerbacktableone.webp", "../images/background/jpg/headerbacktableone.jpg", $gradient);
+
+        @include retina(2,192dpi,2dppx) {
+            @include bg-image("../images/background/headerbacktabletwo.webp", "../images/background/jpg/headerbacktabletwo.jpg", $gradient);
+        }
+        
+        @include retina(3,288dpi,3dppx) {
+            @include bg-image("../images/background/headerbacktablethree.webp", "../images/background/jpg/headerbacktablethree.jpg", $gradient);
+        }
+    }  
+    @include desc(1200px){
+        padding: 200px 0;
+        @include bg-image("../images/background/headerbackdescone.webp", "../images/background/jpg/headerbackdescone.jpg", $gradient);
+
+        @include retina(2,192dpi,2dppx) {
+            @include bg-image("../images/background/headerbackdesctwo.webp", "../images/background/jpg/headerbackdesctwo.jpg", $gradient);
+        }
+        
+        @include retina(3,288dpi,3dppx) {
+            @include bg-image("../images/background/headerbackdescthree.webp", "../images/background/jpg/headerbackdescthree.jpg", $gradient);
+        }
+    }   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 &__title{
     font-weight: 900;
     font-size: 26px;
