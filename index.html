@@ -96,7 +96,17 @@
             <h3 class="work__title">Чим ми займаємося</h3>
             <ul class="work__list">
                 <li class="work__list-item">
-                <img class="work__list-img" src="./images/whatfirst.png" alt="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="./images/background/headerbackdescone.webp 1x, ./images/background/headerbackdesctwo.webp 2x"
+                          type="image/webp"/>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="./images/background/jpg/headerbackdescone.jpg 1x, ./images/background/jpg/headerbackdesctwo.jpg 2x"
+                          type="image/jpeg"/>
+                        <img class="work__list-img" src="./images/whatfirst.png" alt="">
+                      </picture>
                 <p class="work__list-text">Десктопні додатки</p>
                 </li>
                 <li class="work__list-item">
