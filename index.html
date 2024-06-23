@@ -96,7 +96,7 @@
             <h3 class="work__title">Чим ми займаємося</h3>
             <ul class="work__list">
                 <li class="work__list-item">
-                    <picture>
+                    <!-- <picture>
                         <source
                           media="(min-width:1200px)"
                           srcset="./images/background/headerbackdescone.webp 1x, ./images/background/headerbackdesctwo.webp 2x"
@@ -104,9 +104,9 @@
                         <source
                           media="(min-width:1200px)"
                           srcset="./images/background/jpg/headerbackdescone.jpg 1x, ./images/background/jpg/headerbackdesctwo.jpg 2x"
-                          type="image/jpeg"/>
+                          type="image/jpeg"/> -->
                         <img class="work__list-img" src="./images/whatfirst.png" alt="">
-                      </picture>
+                      <!-- </picture> -->
                 <p class="work__list-text">Десктопні додатки</p>
                 </li>
                 <li class="work__list-item">
@@ -125,7 +125,34 @@
             <h3 class="team__title">Наша команда</h3>
             <ul class="team__list">
                 <li class="team__list-item">
-                    <img width="270" height="260" class="team__list-img" src="./images/teamfirst.jpg" alt="">
+                    <picture>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="./team/desc/igor-1x.webp 1x, ./team/desc/igor-2x.webp 2x, ./team/desc/igor-3x.webp 3x"
+                          type="image/webp"/>
+                        <source
+                          media="(min-width:1200px)"
+                          srcset="./team/desc/igor-1x.jpg 1x, ./team/desc/igor-2x.jpg 2x, ./team/desc/igor-3x.jpg 3x"
+                          type="image/jpeg"/>
+                          <source
+                          media="(min-width:768px)"
+                          srcset="./team/tab/igortab-1x.webp 1x, ./team/tab/igortab-2x.webp 2x, ./team/tab/igortab-3x.webp 3x"
+                          type="image/webp"/>
+                        <source
+                          media="(min-width:768px)"
+                          srcset="./team/tab/igortab-1x.jpg 1x, ./team/tab/igortab-2x.jpg 2x, ./team/tab/igortab-3x.webp 3x"
+                          type="image/jpeg"/>
+                          <source
+                          media="(min-width:480px)"
+                          srcset="./team/phone/igorphone1-x.webp 1x, ./team/phone/igorphone2-x.webp 2x, ./team/phone/igorphone3-x.webp 3x"
+                          type="image/webp"/>
+                        <source
+                          media="(min-width:480px)"
+                          srcset="./team/phone/igorphone1-x.jpg 1x, ./team/phone/igorphone2-x.jpg 2x, ./team/phone/igorphone3-x.jpg 3x"
+                          type="image/jpeg"/>
+                          <img width="450" class="team__list-img" src="./images/teamfirst.jpg" alt="">
+                      </picture>
+                    
                     <div class="team__list-wrap">
                     <h5 class="team__list-subtitle">Ігор Дем'яненко</h5>
                     <p class="team__list-text">Product Designer</p>
